@@ -1,20 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import Login from './Login';
-import Borders from './Borders';
-import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import reportWebVitals from './reportWebVitals';
+import './index.css';
+
+import App from './pages/App';
+import Login from './pages/Login';
+import Borders from './pages/Borders';
+import NotFound from './pages/NotFound';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
         <Route exact path="/" element={<App/>} />
-        <Route path="/index" element={<App/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/borders" element={<Borders/>} />
+        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/borders" element={<Borders/>} />
+        <Route element={<NotFound/>} />
       </Routes>
     </Router>
   </React.StrictMode>,

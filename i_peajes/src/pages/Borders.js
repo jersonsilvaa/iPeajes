@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import { Link } from "react-router-dom";
 
 function Borders() {
@@ -12,7 +12,7 @@ function Borders() {
                 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                     {/* <!-- Sidebar - Brand --> */}
-                    <Link to="/index" className="sidebar-brand d-flex align-items-center justify-content-center">
+                    <Link to="/" className="sidebar-brand d-flex align-items-center justify-content-center">
                         <div className="sidebar-brand-icon rotate-n-15">
                             <i className="fas fa-laugh-wink"></i>
                         </div>
