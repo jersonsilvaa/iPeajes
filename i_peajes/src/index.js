@@ -16,7 +16,7 @@ ReactDOM.render(
         <Route exact path="/" element={<App/>} />
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/borders" element={<Borders/>} />
-        <Route element={<NotFound/>} />
+        <Route path='*' element={<NotFound/>} />
       </Routes>
     </Router>
   </React.StrictMode>,
