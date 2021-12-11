@@ -6,6 +6,7 @@ import './index.css';
 
 import App from './pages/App';
 import Login from './pages/Login';
+import Register from './pages/Register';
 import Borders from './pages/Borders';
 import NotFound from './pages/NotFound';
 
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Routes>
         <Route exact path="/" element={<App/>} />
         <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/register" element={<Register/>} />
         <Route exact path="/borders" element={<Borders/>} />
         <Route path='*' element={<NotFound/>} />
       </Routes>

@@ -18,7 +18,7 @@ const Topbar = () => {
                     <input type="text" className="form-control bg-light border-0 small" placeholder="Buscar..."
                         aria-label="Search" aria-describedby="basic-addon2"/>
                     <div className="input-group-append">
-                        <button className="btn btn-primary" type="button">
+                        <button className="btn btn-success" type="button">
                             <i className="fas fa-search fa-sm"></i>
                         </button>
                     </div>
@@ -43,7 +43,7 @@ const Topbar = () => {
                                     placeholder="Search for..." aria-label="Search"
                                     aria-describedby="basic-addon2"/>
                                 <div className="input-group-append">
-                                    <button className="btn btn-primary" type="button">
+                                    <button className="btn btn-success" type="button">
                                         <i className="fas fa-search fa-sm"></i>
                                     </button>
                                 </div>
@@ -68,7 +68,7 @@ const Topbar = () => {
                         </h6>
                         <a className="dropdown-item d-flex align-items-center" href="#">
                             <div className="mr-3">
-                                <div className="icon-circle bg-primary">
+                                <div className="icon-circle bg-success">
                                     <i className="fas fa-file-alt text-white"></i>
                                 </div>
                             </div>

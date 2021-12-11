@@ -3,7 +3,7 @@ import React from 'react';
 
 const Sidebar = () => {
     return (
-        <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul className="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
             {/* <!-- Sidebar --> */}
 
             {/* <!-- Sidebar - Brand --> */}
@@ -86,7 +86,7 @@ const Sidebar = () => {
                     <div className="bg-white py-2 collapse-inner rounded">
                         <h6 className="collapse-header">Login Screens:</h6>
                         <Link to="/login" className="collapse-item">Login</Link>
-                        <a className="collapse-item" href="register.html">Register</a>
+                        <Link to="/register" className="collapse-item">Register</Link>
                         <a className="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div className="collapse-divider"></div>
                         <h6 className="collapse-header">Other Pages:</h6>
