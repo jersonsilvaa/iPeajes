@@ -1,5 +1,3 @@
-import logo from '../logo.svg';
-
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import Footer from "../components/Footer";

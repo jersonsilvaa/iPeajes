@@ -19,9 +19,9 @@ const Sidebar = () => {
 
             {/* <!-- Nav Item - Dashboard --> */}
             <li className="nav-item active">
-                <a className="nav-link" href="index.html">
+                <Link className="nav-link" to="/">
                     <i className="fas fa-fw fa-home"></i>
-                    <span>Inicio</span></a>
+                    <span>Inicio</span></Link>
             </li>
 
             {/* <!-- Divider --> */}
@@ -29,40 +29,20 @@ const Sidebar = () => {
 
             {/* <!-- Heading --> */}
             <div className="sidebar-heading">
-                Gestion
+                Gestión general
             </div>
 
-            {/* <!-- Nav Item - Pages Collapse Menu --> */}
+            {/* <!-- Nav Item - Peajes y consorcios Collapse Menu --> */}
             <li className="nav-item">
                 <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i className="fas fa-fw fa-cog"></i>
-                    <span>Consorcios</span>
+                    <i class="fas fa-fw fa-bicycle"></i>
+                    <span>Peajes y consorcios</span>
                 </a>
                 <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Components:</h6>
-                        <a className="collapse-item" href="buttons.html">Buttons</a>
-                        <a className="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
-            </li>
-
-            {/* <!-- Nav Item - Utilities Collapse Menu --> */}
-            <li className="nav-item">
-                <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i className="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
-                </a>
-                <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div className="bg-white py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Utilities:</h6>
-                        <a className="collapse-item" href="utilities-color.html">Colors</a>
-                        <Link to="/borders" className="collapse-item">Borders</Link>
-                        <a className="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a className="collapse-item" href="utilities-other.html">Other</a>
+                        <Link className="collapse-item" to="/peajes">Peajes</Link>
+                        <Link className="collapse-item" to="/consorcios">Consorcios</Link>
                     </div>
                 </div>
             </li>
@@ -72,42 +52,38 @@ const Sidebar = () => {
 
             {/* <!-- Heading --> */}
             <div className="sidebar-heading">
-                Addons
+                Gestión de usuarios
             </div>
 
-            {/* <!-- Nav Item - Pages Collapse Menu --> */}
+            {/* <!-- Nav Item - Users --> */}
+            <li className="nav-item">
+                <Link className="nav-link" to="/usuarios">
+                <i class="fas fa-fw fa-users"></i>
+                    <span>Ver usuarios</span></Link>
+            </li>
+
+            {/* <!-- Divider --> */}
+            <hr className="sidebar-divider"/>
+
+            {/* <!-- Heading --> */}
+            <div className="sidebar-heading">
+                Tarjetas RFID
+            </div>
+
+            {/* <!-- Nav Item - Tarjetas RFID Collapse Menu --> */}
             <li className="nav-item">
                 <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i className="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
+                    <i class="fas fa-fw fa-credit-card"></i>
+                    <span>Gestiona tu tarjeta</span>
                 </a>
                 <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Login Screens:</h6>
-                        <Link to="/login" className="collapse-item">Login</Link>
-                        <Link to="/register" className="collapse-item">Register</Link>
-                        <a className="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div className="collapse-divider"></div>
-                        <h6 className="collapse-header">Other Pages:</h6>
-                        <a className="collapse-item" href="404.html">404 Page</a>
-                        <a className="collapse-item" href="blank.html">Blank Page</a>
+                        <Link to="/conseguirtarjeta" className="collapse-item">Consigue tu tarjeta</Link>
+                        <Link to="/recargartarjeta" className="collapse-item">Recargar tarjeta</Link>
+                        <Link to="/historial" className="collapse-item">Historial de transacciones</Link>
                     </div>
                 </div>
-            </li>
-
-            {/* <!-- Nav Item - Charts --> */}
-            <li className="nav-item">
-                <a className="nav-link" href="charts.html">
-                    <i className="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            {/* <!-- Nav Item - Tables --> */}
-            <li className="nav-item">
-                <a className="nav-link" href="tables.html">
-                    <i className="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
             </li>
 
             {/* <!-- Divider --> */}

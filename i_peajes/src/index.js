@@ -7,8 +7,13 @@ import './index.css';
 import App from './pages/App';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Borders from './pages/Borders';
 import NotFound from './pages/NotFound';
+import Peajes from './pages/Peajes';
+import Consorcios from './pages/Consorcios';
+import Usuarios from './pages/Usuarios';
+import ConseguirTarjeta from './pages/ConseguirTarjeta';
+import RecargarTarjeta from './pages/RecargarTarjeta';
+import Transacciones from './pages/Transacciones';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +22,12 @@ ReactDOM.render(
         <Route exact path="/" element={<App/>} />
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/register" element={<Register/>} />
-        <Route exact path="/borders" element={<Borders/>} />
+        <Route exact path="/peajes" element={<Peajes/>} />
+        <Route exact path="/consorcios" element={<Consorcios/>} />
+        <Route exact path="/usuarios" element={<Usuarios/>} />
+        <Route exact path="/conseguirtarjeta" element={<ConseguirTarjeta/>} />
+        <Route exact path="/recargartarjeta" element={<RecargarTarjeta/>} />
+        <Route exact path="/historial" element={<Transacciones/>} />
         <Route path='*' element={<NotFound/>} />
       </Routes>
     </Router>
